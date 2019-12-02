@@ -8,7 +8,7 @@ console.log(`input is ${input}`);
 input[1] = 12;
 input[2] = 2;
 
-function opcodeOutput(inputArray) {
+function intcodeOutput(inputArray) {
     let input = inputArray.slice();
     for (let i = 0; i < input.length; i += 4) {
         let firstIndex = input[i + 1];
@@ -29,4 +29,4 @@ function opcodeOutput(inputArray) {
     return input;
 }
 
-console.log(`output is ${opcodeOutput(input)}`);
+console.log(`output is ${intcodeOutput(input)}`);
